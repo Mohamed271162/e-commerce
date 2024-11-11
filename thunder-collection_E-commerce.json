@@ -1,0 +1,202 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "E-commerce",
+    "dateExported": "2023-08-15T00:41:58.398Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "4d7f5629-97cb-4df8-a71a-57c087c9f802",
+            "name": "Category",
+            "containerId": "",
+            "created": "2023-08-11T12:03:39.781Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "e55520d2-47f5-4fbb-94d4-76efd7890c5a",
+            "name": "subCategory",
+            "containerId": "",
+            "created": "2023-08-13T20:35:08.520Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "93d767d4-a3b9-4ea5-a875-b05adf61f8e3",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "4d7f5629-97cb-4df8-a71a-57c087c9f802",
+            "name": "Create Category",
+            "url": "http://localhost:3000/category/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-08-11T12:03:52.844Z",
+            "modified": "2023-08-15T00:41:17.178Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "orange"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Mohamed\\Pictures\\2022-08\\FB_IMG_1659393827626.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "71e23376-5854-4a73-bbd3-16407091d4e3",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "4d7f5629-97cb-4df8-a71a-57c087c9f802",
+            "name": "Update Category",
+            "url": "http://localhost:3000/category/64d8eb03114db737de56dc6f",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2023-08-13T15:17:31.348Z",
+            "modified": "2023-08-13T15:27:28.130Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Medoz"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Mohamed\\Pictures\\2022-06\\FB_IMG_1656402727509.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d99cb500-edc9-4b18-afed-aeb42f4bc899",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "4d7f5629-97cb-4df8-a71a-57c087c9f802",
+            "name": "Delete Category",
+            "url": "http://localhost:3000/category/?categoryId=64d93d84188a55e05450c436",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2023-08-13T20:18:11.238Z",
+            "modified": "2023-08-13T20:31:21.726Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "categoryId",
+                    "value": "64d8eb03114db737de56dc6f",
+                    "isDisabled": true,
+                    "isPath": false
+                },
+                {
+                    "name": "categoryId",
+                    "value": "64d93d84188a55e05450c436",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "12ffe7eb-fa02-4756-91a9-6e1e8af6bc22",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "e55520d2-47f5-4fbb-94d4-76efd7890c5a",
+            "name": "Create Subcategory",
+            "url": "http://localhost:3000/subCategory/?categoryId=64dac9adf1da4ef4bd697360",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-13T20:44:56.262Z",
+            "modified": "2023-08-15T00:41:37.659Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "categoryId",
+                    "value": "64dac9adf1da4ef4bd697360",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "chell out"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Mohamed\\Pictures\\2022-12\\IMG_20221201_171050_117.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "688e94aa-bf9f-4629-87c4-895cbaba7f8b",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "e55520d2-47f5-4fbb-94d4-76efd7890c5a",
+            "name": "Update subCategory",
+            "url": "http://localhost:3000/subCategory/?subcategoryId=64da1c39879ac88450cf302f",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-08-14T13:12:58.270Z",
+            "modified": "2023-08-14T13:23:14.770Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "subcategoryId",
+                    "value": "64da1c39879ac88450cf302f",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "monalizaaa"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "c:\\Users\\Mohamed\\Pictures\\2022-06\\IMG_20220626_155348_012.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "80b22ba9-e4d7-476a-a30a-8318bd30f352",
+            "colId": "1c144ffd-75cc-48a0-8e75-17b052c058a5",
+            "containerId": "e55520d2-47f5-4fbb-94d4-76efd7890c5a",
+            "name": "Delete subCategory",
+            "url": "http://localhost:3000/subCategory/?subCategoryId=64da9fab720ba0d60e50cb38",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-08-15T00:27:24.645Z",
+            "modified": "2023-08-15T00:30:38.315Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "subCategoryId",
+                    "value": "64da9fab720ba0d60e50cb38",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
