@@ -13,6 +13,8 @@ export const initiateApp = (app, express) => {
   app.use('/brand', routers.brandRouter)
   app.use('/product',routers.productRouter)
   app.use('/coupon',routers.couponRouter)
+  app.use('/auth', routers.authRouter)
+  app.use('/cart', routers.cartRouter)
 
   app.all('*', (req, res, next) =>
     res.status(404).json({ message: '404 Not Found URL' }),
